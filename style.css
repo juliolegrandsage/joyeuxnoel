@@ -1,0 +1,68 @@
+/* Corps de la page avec un arrière-plan flashant */
+body {
+    background-color: limegreen; /* Vert pétant */
+    color: red; /* Texte rouge intense */
+    font-family: 'Comic Sans MS', cursive; /* Une police mémorable */
+    text-align: center;
+    animation: background-flash 1s infinite; /* Flash du fond */
+}
+
+/* Animation du fond */
+@keyframes background-flash {
+    0% { background-color: limegreen; }
+    50% { background-color: red; }
+    100% { background-color: limegreen; }
+}
+
+/* Style pour les images */
+img {
+    border: 10px dashed gold; /* Cadre doré horrible */
+    border-radius: 50%; /* Transforme en cercle */
+    box-shadow: 10px 10px 20px magenta; /* Ombre criarde */
+    animation: spin 3s linear infinite; /* L'image tourne sans fin */
+}
+
+/* Animation de rotation */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Style pour les liens (même si non inclus dans l'exemple, c'est drôle) */
+a {
+    color: blue;
+    text-decoration: blink; /* Blink est obsolète mais on reste dans l'esprit */
+    font-size: 2em;
+    background: repeating-linear-gradient(
+        45deg,
+        yellow,
+        pink 10px,
+        lightblue 20px
+    ); /* Fond ridicule pour les liens */
+    padding: 10px;
+    border: 5px solid purple;
+}
+
+/* Ajout de marges inutiles */
+body * {
+    margin: 50px;
+    padding: 30px;
+    transform: skew(10deg); /* Tout est tordu */
+}
+
+/* Police géante pour des titres kitsch */
+h1, h2, h3 {
+    font-size: 4em;
+    text-shadow: 5px 5px 10px cyan; /* Ombre criarde */
+    animation: rainbow 2s infinite;
+}
+
+/* Animation arc-en-ciel */
+@keyframes rainbow {
+    0% { color: red; }
+    20% { color: orange; }
+    40% { color: yellow; }
+    60% { color: green; }
+    80% { color: blue; }
+    100% { color: violet; }
+}
